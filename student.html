@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Student Spot</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav .logo img {
+            height: 50px; /* Adjust logo size */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover; /* Campus Ambassador image */
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+         .logo-img{
+            height:300px;
+            width:100px;
+         }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 10px 0 0;
+        }
+
+        .features, .events, .internships, .hackathons, .contact {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .eventimg{
+            height:200px;
+            width:200px;
+        }
+
+        .feature, .event,.internship, .hackathon, .contact-info {
+            text-align: center;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .feature i, .event i, .internship i, .hackathon i, .contact-info i {
+            font-size: 48px;
+            color: #2575fc;
+            margin-bottom: 20px;
+        }
+
+        .feature h2, .event h2,.internship h2, .hackathon h2, .contact-info h2 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .feature p, .event p, .internship p, .hackathon p, .contact-info p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #2575fc;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #6a11cb;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .features, .events, .internships, .hackathons, .contact {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature, .event,.internship, .hackathon, .contact-info {
+                margin-bottom: 40px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="logo-img" src="C:\Users\user\AppData\Local\Temp\4b5e28bb-262a-4a3c-b787-6d0a4301eda1_thestudentspot.zip.thestudentspot.zip\thestudentspot\Student spot Website\logo.png" alt="The Student Spot Logo"> <!-- Use logo.png -->
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#hackathons">Hackathons</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Welcome to The Student Spot</h1>
+            <p>Your one-stop destination for all student needs.</p>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="feature">
+            <i class="fas fa-book"></i>
+            <h2>Study Resources</h2>
+            <p>Access a wide range of study materials and resources to excel in your academics.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-users"></i>
+            <h2>Community</h2>
+            <p>Connect with fellow students, share knowledge, and collaborate on projects.</p>
+        </div>
+    </section>
+
+    <section class="events" id="events">
+        <div class="event">
+            <img src="C:\Users\user\Desktop\filestudentspot\TSS (8).jpg" alt="Webinars & Workshops" style="width: 100%; border-radius: 10px;"> <!-- Use TSS (2).jpg -->
+            <p>Join our groups for upcoming webinars & Workshops</p>
+            <a href="#events">View Webinars</a>
+        </div>
+    </section>
+
+    <section class="internships" id="internships">
+        <div class="internship">
+            <img src="C:\Users\user\Desktop\filestudentspot\TSS (3).jpg" alt="Internships" style="width: 100%; border-radius: 10px;"> <!-- Use TSS (3).jpg -->
+            <p>Find the best internship opportunities to kickstart your career.</p>
+            <a href="#internships">Explore Internships</a>
+        </div>
+    </section>
+
+    <section class="hackathons" id="hackathons">
+        <div class="hackathon">
+            <img src="C:\Users\user\Desktop\filestudentspot\TSS (9).jpg" alt="Engineering Jobs" style="width: 100%; border-radius: 10px;"> <!-- Use TSS (9).jpg -->
+            <p>Participate in hackathons to showcase your skills and win prizes.</p>
+            <a href="#hackathons">Join Hackathons</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <h2>Contact Us</h2>
+            <p>Reach out to us for any queries or collaborations.</p>
+            <div class="social-links">
+                <a href="https://chat.whatsapp.com/HMUrmxyAWCn8J8GAS0xDsz" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/company/thestudentspot/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/the_studentspot/profilecard/?igsh=MTBycmc4c3YycTY5dA==" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 The Student Spot. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
